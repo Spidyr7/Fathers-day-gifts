@@ -96,7 +96,7 @@
     </style>
 </head>
 <body>
-    <!-- Hero Section (Minimalist) -->
+    <!-- Hero Section -->
     <section class="container py-5 mt-4">
         <div class="text-center">
             <h1 class="main-heading fw-bold mb-4">
@@ -181,7 +181,7 @@
         </div>
     </section>
 
-    <!-- Email CTA (Supercharged Version) -->
+    <!-- Email CTA Section (Updated for FormSubmit) -->
     <section class="container my-5 py-5">
         <div class="email-cta-box p-5 text-white">
             <div class="row align-items-center">
@@ -195,12 +195,17 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 mt-4 mt-lg-0">
-                    <form class="row g-2">
+                    <!-- Updated Form with FormSubmit Integration -->
+                    <form action="https://formsubmit.co/YOUR_EMAIL_HERE@gmail.com" method="POST">
+                        <input type="hidden" name="_next" value="https://spidyr7.github.io/Fathers-day-gifts/thankyou.html">
+                        <input type="hidden" name="_subject" value="New Gift Guide Subscriber">
+                        <input type="hidden" name="_template" value="table">
+                        
                         <div class="col-12">
-                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@example.com">
+                            <input type="email" name="email" class="form-control form-control-lg" placeholder="YourEmail@example.com" required>
                         </div>
-                        <div class="col-12">
-                            <button class="btn cta-button btn-lg w-100 py-3 fw-bold">
+                        <div class="col-12 mt-3">
+                            <button type="submit" class="btn cta-button btn-lg w-100 py-3 fw-bold">
                                 SEND ME THE DEALS! <i class="fas fa-arrow-right ms-2"></i>
                             </button>
                         </div>
