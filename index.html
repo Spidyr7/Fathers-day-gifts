@@ -25,28 +25,11 @@
             border-radius: 16px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 1;
-        }
-        
-        .category-card::after {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3));
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.3s;
         }
         
         .category-card:hover {
             transform: translateY(-10px) scale(1.03);
             box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-        }
-        
-        .category-card:hover::after {
-            opacity: 1;
         }
         
         .tech-bg { background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%); }
@@ -67,31 +50,12 @@
         .email-cta-box {
             background: linear-gradient(135deg, #6A0572 0%, #C33764 100%);
             border-radius: 16px;
-            border: 3px solid rgba(255,255,255,0.2);
         }
         
         .cta-button {
             background: var(--gold);
             border: none;
             font-weight: 700;
-            letter-spacing: 1px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .cta-button::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -50%;
-            width: 200%; height: 200%;
-            background: rgba(255,255,255,0.1);
-            transform: rotate(45deg);
-            transition: all 0.6s ease;
-        }
-        
-        .cta-button:hover::before {
-            left: 100%;
-            top: 100%;
         }
     </style>
 </head>
@@ -100,7 +64,7 @@
     <section class="container py-5 mt-4">
         <div class="text-center">
             <h1 class="main-heading fw-bold mb-4">
-                The <u>Only</u> Father's Day Gift Guide You'll Need
+                The Ultimate Father's Day Gift Guide
             </h1>
             <p class="lead fs-4 text-muted">
                 <span class="fw-bold" style="color: var(--plum);">Handpicked Items</span> • 
@@ -119,7 +83,7 @@
                     <div class="category-card tech-bg text-white p-4 text-center h-100">
                         <i class="fas fa-microchip fa-4x mb-3"></i>
                         <h3 class="fw-bold">For the Tech-Obsessed Dad</h3>
-                        <p class="mb-0">AI Golf GPS • Smartwatches • More</p>
+                        <p class="mb-0">Smart Gadgets & Accessories</p>
                     </div>
                 </a>
             </div>
@@ -130,7 +94,7 @@
                     <div class="category-card apparel-bg text-white p-4 text-center h-100">
                         <i class="fas fa-laugh-squint fa-4x mb-3"></i>
                         <h3 class="fw-bold">For the Pun-Lord Dad</h3>
-                        <p class="mb-0">Joke Tees • Custom Gifts</p>
+                        <p class="mb-0">Funny & Personalized Gifts</p>
                     </div>
                 </a>
             </div>
@@ -141,7 +105,7 @@
                     <div class="category-card bbq-bg text-white p-4 text-center h-100">
                         <i class="fas fa-utensils fa-4x mb-3"></i>
                         <h3 class="fw-bold">For the Grillmaster Dad</h3>
-                        <p class="mb-0">Portable Grills • Secret Recipes</p>
+                        <p class="mb-0">BBQ Tools & Outdoor Gear</p>
                     </div>
                 </a>
             </div>
@@ -152,7 +116,7 @@
                     <div class="category-card books-bg text-white p-4 text-center h-100">
                         <i class="fas fa-book-heart fa-4x mb-3"></i>
                         <h3 class="fw-bold">For the Sentimental Dad</h3>
-                        <p class="mb-0">Father-Child Journals • Legacy Books</p>
+                        <p class="mb-0">Heartfelt Books & Journals</p>
                     </div>
                 </a>
             </div>
@@ -163,7 +127,7 @@
                     <div class="category-card health-bg text-dark p-4 text-center h-100">
                         <i class="fas fa-spa fa-4x mb-3"></i>
                         <h3 class="fw-bold">For the Self-Care Dad</h3>
-                        <p class="mb-0">Beard Kits • Stress Relief</p>
+                        <p class="mb-0">Relaxation & Grooming</p>
                     </div>
                 </a>
             </div>
@@ -174,43 +138,44 @@
                     <div class="category-card digital-bg text-white p-4 text-center h-100">
                         <i class="fas fa-graduation-cap fa-4x mb-3"></i>
                         <h3 class="fw-bold">For the Always-Learning Dad</h3>
-                        <p class="mb-0">BBQ Masterclass • Golf eBooks</p>
+                        <p class="mb-0">Courses & Digital Resources</p>
                     </div>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Email CTA Section (Updated for FormSubmit) -->
+    <!-- Email CTA Section -->
     <section class="container my-5 py-5">
         <div class="email-cta-box p-5 text-white">
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h2 class="fw-bold mb-3">Want <u>More</u> Genius Gift Ideas?</h2>
-                    <p class="fs-5 mb-0">Get our <span class="fw-bold">FREE</span> weekly digest with:</p>
+                    <h2 class="fw-bold mb-3">Want More Gift Ideas?</h2>
+                    <p class="fs-5 mb-0">Get our weekly deals straight to your inbox:</p>
                     <ul class="mt-3">
-                        <li>🚀 <span class="fw-bold">Secret deals</span> (up to 60% off)</li>
-                        <li>🎁 <span class="fw-bold">Hidden gems</span> most guides miss</li>
-                        <li>⏳ <span class="fw-bold">Last-minute</span> shipping alerts</li>
+                        <li>🚀 Exclusive discounts</li>
+                        <li>🎁 Curated recommendations</li>
+                        <li>⏳ Timely shipping reminders</li>
                     </ul>
                 </div>
                 <div class="col-lg-4 mt-4 mt-lg-0">
-                    <!-- Updated Form with FormSubmit Integration -->
-                    <form action="https://formsubmit.co/YOUR_EMAIL_HERE@gmail.com" method="POST">
+                    <!-- TESTED WORKING FORM -->
+                    <form action="https://formsubmit.co/spidytrvlr@gmail.com" method="POST">
                         <input type="hidden" name="_next" value="https://spidyr7.github.io/Fathers-day-gifts/thankyou.html">
-                        <input type="hidden" name="_subject" value="New Gift Guide Subscriber">
+                        <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_template" value="table">
                         
                         <div class="col-12">
-                            <input type="email" name="email" class="form-control form-control-lg" placeholder="YourEmail@example.com" required>
+                            <input type="email" name="email" class="form-control form-control-lg" 
+                                   placeholder="YourEmail@example.com" required>
                         </div>
                         <div class="col-12 mt-3">
                             <button type="submit" class="btn cta-button btn-lg w-100 py-3 fw-bold">
-                                SEND ME THE DEALS! <i class="fas fa-arrow-right ms-2"></i>
+                                GET UPDATES <i class="fas fa-arrow-right ms-2"></i>
                             </button>
                         </div>
                     </form>
-                    <p class="small mt-2 opacity-75">No spam. Unsubscribe anytime.</p>
+                    <p class="small mt-2 opacity-75">Unsubscribe anytime. No spam.</p>
                 </div>
             </div>
         </div>
